@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Fira Code');
+
+html,
+body {
+  min-width: 290px;
+  color: lime;
+  background-color: white smoke;
+  font-family: "Fira Code";
+  line-height: 1.5;
+  font-weight: thin;
+}
+
+#navbar {
+  background-color: white smoke;
+  position: fixed;
+  min-width: 300px;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 100%;
+  border-right: solid 2px;
+}
+
+#navbar img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 85px;
+  height: 100px;
+}
+
+#navbar header {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color: black;
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: thin;
+}
+
+#navbar ul {
+  padding: 0;
+}
+
+#navbar li {
+  color: #696969;
+  border-top: 1px solid;
+  list-style: none;
+  position: relative;
+  width: 100%;
+}
+
+#navbar a {
+  display: block;
+  padding: 10px 30px;
+  color: #696969;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#navbar a:hover {
+  background-color: lime;
+  color: white;
+}
+
+#main-doc {
+  position: absolute;
+  margin-left: 310px;
+  padding: 20px;
+}
+
+#main-doc header {
+  text-align: left;
+  margin: 0px;
+  font-size: 1.8em;
+  font-weight: thin;
+  color: black;
+}
+
+section article {
+  color: #696969;
+  margin: 15px;
+  margin-bottom: 50px;
+}
+
+section article a:hover {
+  color: lime;
+}
+
+section article ul {
+  margin-left: -40px;
+}
+
+code {
+  color: lime;
+  display: block;
+  line-height: 2;
+  background-color: black;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 3px;
+}
+
+@media (max-width: 815px) {
+  #navbar {
+    background-color: white;
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    border: none;
+  }
+
+  #main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 450px;
+    border-top: 2px solid;
+  }
+}

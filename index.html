@@ -1,0 +1,91 @@
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Documento Técnico</title>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
+</head>
+
+<body>
+  <nav id="navbar">
+    <header>Documentação Java Scrip</header>
+    <img
+         src="java.jpg"
+         >
+    <ul>
+      <li><a class="nav-link" href="#Intro">Introdução</a></li>
+      <li><a class="nav-link" href="#Concepts">Conceitos</a></li>
+      <li><a class="nav-link" href="#Installing">Instalação</a></li>
+      <li><a class="nav-link" href="#Hello_world">Hello world</a></li>
+      <li><a class="nav-link" href="#Reference">Referência</a></li>
+    </ul>
+  </nav>
+  
+  <main id="main-doc">
+  
+    <section class="main-section" id="Intro">
+      <header>Introdução</header>
+      <article>
+        <p>JavaScript é uma linguagem de script orientada a objetos. É uma linguagem pequena e leve. Dentro de um ambiente host (por exemplo, um navegador da Web), o JavaScript pode ser conectado aos objetos de seu ambiente para fornecer controle programático sobre eles.</p>
+        <p>O JavaScript contém uma biblioteca padrão de objetos, como Array, Date e Math, e um conjunto central de elementos linguísticos, como operadores, estruturas de controle e instruções. O Core JavaScript pode ser estendido para uma variedade de propósitos, complementando-o com objetos adicionais; por exemplo:</p>
+      </article>
+    </section>
+  
+    <section class="main-section" id="Concepts">
+      <header>Conceitos</header>
+      <article>
+        <p>folium facilita a visualização de dados que foram manipulados em Python em um mapa de folheto interativo. Ele permite a vinculação de dados a um mapa para visualizações de coropletos, bem como a passagem de visualizações ricas em vetor / raster / HTML como marcadores no mapa.</p>
+        <p> A biblioteca possui vários tilesets integrados de OpenStreetMap, Mapbox e Stamen, e suporta tilesets personalizados com Mapbox ou Cloudmade API keys. folium suporta sobreposições de imagem, vídeo, GeoJSON e TopoJSON.<p>
+      </article>
+    </section>
+  
+    <section class="main-section" id="Installing">
+      <header>Instalação</header>
+      <article>
+        <p><u>Requirements</u></p>
+        <code>branca, jinja2 and requests.</code>
+        <p>Algumas funcionalidades podem exigir dependências extras numpy, pandas, geopandas, altair, etc.</p>
+        <p><u>Instalação</u></p>
+        <code>$ pip install folium</code>
+        <p>or</p>
+        <code>$ conda install folium -c conda-forge</code>
+      </article>
+    </section>
+  
+    <section class="main-section" id="Hello_world">
+      <header>Hello world</header>
+      <article>
+        <p><u>Quickstart</u></p>
+        <ul>
+          <li>Para criar um mapa básico, basta passar suas coordenadas iniciais para o Folium: </li>
+          <code>import folium</code>
+          <code>m = folium.Map(location=[45.5236, -122.6750])</code>
+          <li>Para exibi-lo em um bloco de notas Jupyter, basta solicitar a representação do objeto:</li>
+          <code>m</code>
+          <li>to save it in a file,</li>
+          <code>m.save('index.html')</code>
+          <li>Os blocos padrão são definidos como OpenStreetMap, mas Stamen Terrain, Stamen Toner, Mapbox Bright e Mapbox Control Room e muitos outros blocos estão integrados.</li>
+          <code>folium.Map(location=[45.5236, -122.6750], tiles='Stamen Toner', zoom_start=13)</code>
+          <li>Pode-se usar conjuntos de blocos personalizados Cloudmade ou Mapbox - basta passar sua chave para a palavra-chave API_key:</li>
+          <code>folium.Map(location=[45.5236, -122.6750], tiles='Mapbox', API_key='your.API.key')</code>
+          <li>Por último, o Folium suporta a passagem de qualquer tileset personalizado compatível com leaflet.js:</li>
+          <code>folium.Map(location=[45.372, -121.6972], zoom_start=12, tiles='http://{s}.tiles.yourtiles.com/{z}/{x}/{y}.png', attr='My Data Attribution')</code>
+          <p>Selecione o código no pad e aperte Ctrl+R para vê-lo se desdobrar no seu navegador!</p>
+        </ul>
+      </article>
+    </section>
+  
+    <section class="main-section" id="Reference">
+      <header>Referência</header>
+      <article>
+        <p>Toda a documentação nesta página é tirada de
+          <a
+             href="https://python-visualization.github.io/folium/"
+             target="_blank"
+             >folium documentation</a
+            >
+      </article>
+    </section>
+  
+  </main>
+</body>
+</html>
