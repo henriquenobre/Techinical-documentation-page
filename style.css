@@ -117,5 +117,16 @@ code {
     margin-left: 0px;
     margin-top: 450px;
     border-top: 2px solid;
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px){
+  #navbar{
+    width: 153%;
+  }
+
+  #main-doc{
+    width: 138%;
   }
 }
